@@ -1,0 +1,12 @@
+name: Video Generation Pipeline
+
+on:
+  repository_dispatch:
+    types: [create_video]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Trigger
+        run: echo "Trigger thanh cong tu Google Sheets!"
